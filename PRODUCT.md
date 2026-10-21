@@ -38,7 +38,7 @@ Visitors read on desktop between other applications, and on phones from LinkedIn
 
 ## Evidence on Hand
 
-- Studio portrait: `src/assets/barath.png` (grey seamless background, black suit).
+- Studio portrait: `src/assets/barath-portrait.jpg` (4:5, grey seamless background, black suit).
 - Resume: `public/Barathkumar_resume.pdf`.
 - Six projects, three internships (JYESTA, CLOB Groups, Livestream Technologies), three education entries, five certifications, four achievements, all in `src/data.ts` and `src/App.tsx`.
 - No screenshots of any project exist. Projects are shown as drawn figures of their real pipelines.

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence, MotionConfig } from 'motion/react';
 import ProjectModal from './components/ProjectModal';
 import Nav from './sections/Nav';
@@ -15,6 +15,13 @@ import type { Project } from './types';
 
 export default function App() {
   const [modal, setModal] = useState<{ list: Project[]; index: number } | null>(null);
+
+  // A link to /#section arrives before the sections exist, so the browser can't jump; do it once mounted.
+  // (Reloads clear the hash in main.tsx and start from the top.)
+  useEffect(() => {
+    const target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView({ behavior: 'instant' });
+  }, []);
 
   const openProject = (project: Project, list: Project[]) => {
     setModal({ list, index: Math.max(0, list.findIndex((p) => p.id === project.id)) });

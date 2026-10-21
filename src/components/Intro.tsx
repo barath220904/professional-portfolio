@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
-const SEEN_KEY = 'barath_intro_seen';
-
 function shouldPlay() {
   if (typeof window === 'undefined') return false;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
-  try {
-    return sessionStorage.getItem(SEEN_KEY) !== '1';
-  } catch {
-    return true;
-  }
+  // Plays on every fresh load and reload; skipped when returning with the back/forward buttons
+  const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+  return navigation?.type !== 'back_forward';
 }
 
 /** Decided once at load so the hero can hold its entrance until the curtain lifts. */
@@ -20,18 +16,13 @@ export const INTRO_DELAY = INTRO_PLAYS ? 0.6 : 0;
 
 /**
  * A short opening: the name on an ink field, a highlighter stroke under it, then the field lifts away.
- * Purely decorative, never blocks input, and plays once per session.
+ * Purely decorative, never blocks input, and plays on each load.
  */
 export default function Intro() {
   const [visible, setVisible] = useState(INTRO_PLAYS);
 
   useEffect(() => {
     if (!INTRO_PLAYS) return;
-    try {
-      sessionStorage.setItem(SEEN_KEY, '1');
-    } catch {
-      /* ignore */
-    }
     const t = window.setTimeout(() => setVisible(false), 450);
     return () => window.clearTimeout(t);
   }, []);
