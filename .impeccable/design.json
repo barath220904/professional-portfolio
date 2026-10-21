@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T05:15:08+00:00",
+  "title": "Design System: Barathkumar V Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "mark": {
+        "role": "primary",
+        "displayName": "Highlighter Yellow",
+        "canonical": "#e9fb3c",
+        "tonalRamp": [
+          "oklch(15% 0.19 115)",
+          "oklch(25% 0.19 115)",
+          "oklch(36% 0.19 115)",
+          "oklch(48% 0.19 115)",
+          "oklch(60% 0.19 115)",
+          "oklch(72% 0.19 115)",
+          "oklch(84% 0.19 115)",
+          "oklch(95% 0.19 115)"
+        ]
+      },
+      "mark-2": {
+        "role": "primary",
+        "displayName": "Pressed Highlighter",
+        "canonical": "#dcef2c",
+        "tonalRamp": [
+          "oklch(15% 0.19 115)",
+          "oklch(25% 0.19 115)",
+          "oklch(36% 0.19 115)",
+          "oklch(48% 0.19 115)",
+          "oklch(60% 0.19 115)",
+          "oklch(72% 0.19 115)",
+          "oklch(84% 0.19 115)",
+          "oklch(95% 0.19 115)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f1f2ee",
+        "tonalRamp": [
+          "oklch(15% 0.006 120)",
+          "oklch(25% 0.006 120)",
+          "oklch(36% 0.006 120)",
+          "oklch(48% 0.006 120)",
+          "oklch(60% 0.006 120)",
+          "oklch(72% 0.006 120)",
+          "oklch(84% 0.006 120)",
+          "oklch(95% 0.006 120)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Plate Grey",
+        "canonical": "#e5e7e1",
+        "tonalRamp": [
+          "oklch(15% 0.009 125)",
+          "oklch(25% 0.009 125)",
+          "oklch(36% 0.009 125)",
+          "oklch(48% 0.009 125)",
+          "oklch(60% 0.009 125)",
+          "oklch(72% 0.009 125)",
+          "oklch(84% 0.009 125)",
+          "oklch(95% 0.009 125)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Deep Plate",
+        "canonical": "#d9dcd4",
+        "tonalRamp": [
+          "oklch(15% 0.011 125)",
+          "oklch(25% 0.011 125)",
+          "oklch(36% 0.011 125)",
+          "oklch(48% 0.011 125)",
+          "oklch(60% 0.011 125)",
+          "oklch(72% 0.011 125)",
+          "oklch(84% 0.011 125)",
+          "oklch(95% 0.011 125)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "#121316",
+        "tonalRamp": [
+          "oklch(15% 0.008 275)",
+          "oklch(25% 0.008 275)",
+          "oklch(36% 0.008 275)",
+          "oklch(48% 0.008 275)",
+          "oklch(60% 0.008 275)",
+          "oklch(72% 0.008 275)",
+          "oklch(84% 0.008 275)",
+          "oklch(95% 0.008 275)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#2a2c31",
+        "tonalRamp": [
+          "oklch(15% 0.01 270)",
+          "oklch(25% 0.01 270)",
+          "oklch(36% 0.01 270)",
+          "oklch(48% 0.01 270)",
+          "oklch(60% 0.01 270)",
+          "oklch(72% 0.01 270)",
+          "oklch(84% 0.01 270)",
+          "oklch(95% 0.01 270)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#4f535a",
+        "tonalRamp": [
+          "oklch(15% 0.013 260)",
+          "oklch(25% 0.013 260)",
+          "oklch(36% 0.013 260)",
+          "oklch(48% 0.013 260)",
+          "oklch(60% 0.013 260)",
+          "oklch(72% 0.013 260)",
+          "oklch(84% 0.013 260)",
+          "oklch(95% 0.013 260)"
+        ]
+      },
+      "paper-dim": {
+        "role": "neutral",
+        "displayName": "Dim Paper",
+        "canonical": "#b9bcb4",
+        "tonalRamp": [
+          "oklch(15% 0.012 120)",
+          "oklch(25% 0.012 120)",
+          "oklch(36% 0.012 120)",
+          "oklch(48% 0.012 120)",
+          "oklch(60% 0.012 120)",
+          "oklch(72% 0.012 120)",
+          "oklch(84% 0.012 120)",
+          "oklch(95% 0.012 120)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Monument type: the hero name marquee; uppercase normal-width variants for Experience initials and the footer wordmark. Archivo at width 118%, weight 760."
+      },
+      "headline": {
+        "displayName": "Heading",
+        "purpose": "Section titles, featured project titles, skill layer names, dialog titles, the scroll statement. Width 108%, weight 680, balanced wrap."
+      },
+      "title": {
+        "displayName": "Lead",
+        "purpose": "Hero sentence, supporting project titles, skill names, Experience role lines."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text at 17px / 1.55, capped at 38-70ch."
+      },
+      "label": {
+        "displayName": "Small",
+        "purpose": "Provenance tickets, Figure captions, row labels, small buttons; tabular figures for years, dates and counts."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-lift",
+        "value": "0 24px 60px -12px rgba(18,19,22,0.45)",
+        "purpose": "Project dialog only."
+      },
+      {
+        "name": "scrim",
+        "value": "rgba(18,19,22,0.6)",
+        "purpose": "Ink scrim behind the modal project dialog."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Default for entrances, reveals, swipe and press."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Curtains and clip-path reveals (intro lift, portrait reveal)."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Mobile menu sheet dropping from the top (0.34s in, 0.22s out)."
+      },
+      {
+        "name": "ease-draw",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Pipeline figure strokes drawing in (0.4s each, 0.14s stagger)."
+      },
+      {
+        "name": "swipe",
+        "value": "280ms",
+        "purpose": "Highlighter swipe background-size transition, ease-out."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) 160ms",
+        "purpose": "Active state of every pressable, ease-out; colour transitions 200ms."
+      },
+      {
+        "name": "reveal",
+        "value": "0.6s, rise 20px",
+        "purpose": "Section parts rising into place once on entering the viewport, ease-out."
+      },
+      {
+        "name": "marquee",
+        "value": "60s linear infinite",
+        "purpose": "Hero name travelling through the portrait; pauses on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Swipe and press transitions to 0ms, no press scale, marquee parked, figures and statement shown finished, intro skipped."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "475px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Highlighter Button",
+      "kind": "button",
+      "refersTo": "button-mark",
+      "description": "The single primary action in a region: download resume, email.",
+      "html": "<button class=\"ds-btn-mark\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" x2=\"12\" y1=\"15\" y2=\"3\"/></svg>Download résumé</button>",
+      "css": ".ds-btn-mark { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 10px; background: var(--color-mark, #e9fb3c); color: var(--color-ink, #121316); padding: 16px 24px; font-size: 17px; font-weight: 600; border: 0; border-radius: 0; cursor: pointer; transition: transform 160ms cubic-bezier(0.23,1,0.32,1), background-color 200ms ease; } .ds-btn-mark:hover { background: var(--color-mark-2, #dcef2c); } .ds-btn-mark:active { transform: scale(0.97); } .ds-btn-mark:focus-visible { outline: 2px solid var(--color-ink, #121316); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Secondary solid action: nav Resume, Read the case study, Copy, Send.",
+      "html": "<button class=\"ds-btn-ink\">Read the case study<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-ink { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 8px; background: var(--color-ink, #121316); color: var(--color-paper, #f1f2ee); padding: 12px 20px; font-size: 17px; font-weight: 600; border: 0; border-radius: 0; cursor: pointer; transition: transform 160ms cubic-bezier(0.23,1,0.32,1), background-color 200ms ease; } .ds-btn-ink:hover { background: var(--color-ink-soft, #2a2c31); } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 2px solid var(--color-ink, #121316); outline-offset: 3px; }"
+    },
+    {
+      "name": "Highlighter Swipe Link",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "The state language: a flat highlighter fill sweeps in per line on hover, focus or data-active.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-mark\" href=\"#\">Barathkumar V</a><span class=\"ds-nav-links\"><a class=\"ds-swipe\" href=\"#\">Work</a><a class=\"ds-swipe\" href=\"#\" data-active=\"true\">Experience</a><a class=\"ds-swipe\" href=\"#\">Skills</a><a class=\"ds-swipe\" href=\"#\">About</a></span></nav>",
+      "css": ".ds-nav { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 24px; background: var(--color-paper, #f1f2ee); color: var(--color-ink, #121316); } .ds-nav-mark { font-size: 17px; font-weight: 700; font-stretch: 112%; color: inherit; text-decoration: none; } .ds-nav-links { display: flex; gap: 16px; } .ds-swipe { font-size: 15px; font-weight: 500; color: inherit; text-decoration: none; padding: 4px 0.06em; margin: 0 -0.06em; background-image: linear-gradient(var(--color-mark, #e9fb3c), var(--color-mark, #e9fb3c)); background-repeat: no-repeat; background-position: 0 0; background-size: 0% 100%; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background-size 280ms cubic-bezier(0.23,1,0.32,1); } .ds-swipe:hover, .ds-swipe:focus-visible, .ds-swipe[data-active=\"true\"] { background-size: 100% 100%; } .ds-swipe:focus-visible { outline: 2px solid var(--color-ink, #121316); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Contact form field: paper fill, 1.5px ink border, square; 3px border when invalid.",
+      "html": "<label class=\"ds-field\"><span>Your email</span><input class=\"ds-input\" type=\"email\" placeholder=\"name@company.com\"></label>",
+      "css": ".ds-field { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; display: grid; gap: 8px; font-weight: 600; color: var(--color-ink, #121316); } .ds-input { font: inherit; font-weight: 400; width: 100%; background: var(--color-paper, #f1f2ee); color: var(--color-ink, #121316); padding: 14px 16px; font-size: 17px; border: 1.5px solid var(--color-ink, #121316); border-radius: 0; caret-color: var(--color-ink, #121316); } .ds-input::placeholder { color: var(--color-muted, #4f535a); } .ds-input:focus-visible { outline: 2px solid var(--color-ink, #121316); outline-offset: 2px; } .ds-input[aria-invalid=\"true\"] { border-width: 3px; }"
+    },
+    {
+      "name": "Figure Plate",
+      "kind": "card",
+      "refersTo": "figure-plate",
+      "description": "A project's pipeline drawn as a textbook figure: 1.5px ink boxes and arrows, the model step in highlighter, with a Figure caption.",
+      "html": "<figure class=\"ds-plate\"><svg viewBox=\"0 0 400 330\" role=\"img\" aria-label=\"Pipeline: Raw data, then Model, then Interface\"><defs><marker id=\"ds-arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#121316\"/></marker></defs><line x1=\"182\" y1=\"80\" x2=\"182\" y2=\"108\" stroke=\"#121316\" stroke-width=\"1.5\" marker-end=\"url(#ds-arrow)\"/><line x1=\"182\" y1=\"170\" x2=\"182\" y2=\"198\" stroke=\"#121316\" stroke-width=\"1.5\" marker-end=\"url(#ds-arrow)\"/><rect x=\"36\" y=\"20\" width=\"292\" height=\"60\" fill=\"#f1f2ee\" stroke=\"#121316\" stroke-width=\"1.5\"/><text x=\"52\" y=\"46\" font-size=\"17\" font-weight=\"600\" fill=\"#121316\">Raw data</text><text x=\"52\" y=\"66\" font-size=\"13\" fill=\"#4f535a\">CSV, pandas</text><rect class=\"ds-model\" x=\"36\" y=\"110\" width=\"292\" height=\"60\" fill=\"#e9fb3c\" stroke=\"#121316\" stroke-width=\"1.5\"/><text x=\"52\" y=\"136\" font-size=\"17\" font-weight=\"600\" fill=\"#121316\">Model</text><text x=\"52\" y=\"156\" font-size=\"13\" fill=\"#4f535a\">scikit-learn</text><rect x=\"36\" y=\"200\" width=\"292\" height=\"60\" fill=\"#f1f2ee\" stroke=\"#121316\" stroke-width=\"1.5\"/><text x=\"52\" y=\"236\" font-size=\"17\" font-weight=\"600\" fill=\"#121316\">Interface</text></svg><figcaption>Figure. From raw data to the screen.</figcaption></figure>",
+      "css": ".ds-plate { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; margin: 0; max-width: 360px; background: var(--color-surface, #e5e7e1); padding: 24px; border-radius: 0; } .ds-plate svg { display: block; width: 100%; height: auto; font-family: inherit; } .ds-plate figcaption { margin-top: 12px; font-size: 14px; color: var(--color-muted, #4f535a); }"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "custom",
+      "refersTo": "button-text",
+      "description": "A row of the closing highlighter field: label, large value, word action; rows divided by 1px ink rules.",
+      "html": "<ul class=\"ds-rows\"><li class=\"ds-row ds-row-a\"><span class=\"ds-row-label\">Email</span><a class=\"ds-row-value\" href=\"#\">name@example.com</a><span class=\"ds-row-act\">Copy</span></li><li class=\"ds-row ds-row-b\"><span class=\"ds-row-label\">LinkedIn</span><a class=\"ds-row-value\" href=\"#\">in/barathkumar-ai-ds</a><span class=\"ds-row-act\">Open</span></li></ul>",
+      "css": ".ds-rows { font-family: Archivo, ui-sans-serif, system-ui, sans-serif; list-style: none; margin: 0; padding: 0; color: var(--color-ink, #121316); } .ds-row { display: grid; grid-template-columns: 120px 1fr auto; align-items: end; gap: 16px; padding: 20px 24px 16px; min-height: 88px; } .ds-row-a { background: var(--color-mark-2, #dcef2c); } .ds-row-b { background: var(--color-mark, #e9fb3c); } .ds-row-label { font-size: 14px; font-weight: 600; } .ds-row-value { font-size: 36px; line-height: 1.04; font-weight: 600; letter-spacing: -0.03em; font-stretch: 104%; color: inherit; text-decoration: none; overflow-wrap: anywhere; } .ds-row-value:hover { text-decoration: underline; } .ds-row-value:focus-visible { outline: 2px solid var(--color-ink, #121316); outline-offset: 3px; } .ds-row-act { font-size: 14px; font-weight: 600; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Figure Plate",
+    "overview": "The site is set like a page from an engineering textbook that a student has worked through with one highlighter. Cool, faintly grained paper carries blue-black ink; every project appears as a drawn figure of its real pipeline with a \"Figure.\" caption; and the fluorescent yellow-green highlighter is the only colour that is not ink or paper. The highlighter does two jobs and nothing else: it marks what matters (the model step in a figure, the three layer words in the statement, the primary call to action) and it shows state (hover, focus, the active section, the pressed filter).\n\nDensity is editorial rather than dashboard: huge expanded type sets the monument moments (the name marquee, the internship initials, the footer wordmark), long single-column lists carry the work, and generous section gaps let each part read as its own plate. Everything is flat and square. Depth only exists where something genuinely floats above the page (the project dialog).\n\nThe page closes on its two deliberate colour fields: Contact set entirely on the highlighter, its rows divided by ink rules, answered by the ink footer. Everywhere else the highlighter is a mark or a state, never a background. The world explicitly refuses the dark neon developer portfolio: no gradient cards, no glow, no stock imagery.",
+    "keyCharacteristics": [
+      "Three materials only: paper, ink, highlighter, plus two paper tints and one ink tint for banding.",
+      "One variable family, Archivo, used for everything; width and weight carry the hierarchy.",
+      "Square corners everywhere; borders only on drawn figures and form fields (1.5px ink).",
+      "State is a highlighter swipe that sweeps in left to right on each line, never a glow or colour shift of the text.",
+      "Project pipelines drawn as figure plates: 1.5px ink strokes, the model step filled with highlighter, strokes drawing in on view.",
+      "Motion is quiet and fast: strong ease-out curves, 0.97 press scale, short rising reveals, all honouring reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Highlighter Rule",
+        "body": "The highlighter is the only hue on the page. It is a mark or a state, never decoration; the single exception is the Contact field, which is a deliberate colour field closing the page.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Mark Rule",
+        "body": "Anything on the highlighter is set in ink. Paper or graphite text never sits on `mark` or `mark-2`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Fill Rule",
+        "body": "Colours are flat fills. The only `linear-gradient` in the system is the single-colour layer behind the highlighter swipe, which exists so its width can animate line by line.",
+        "section": "colors"
+      },
+      {
+        "name": "The Five Steps Rule",
+        "body": "Type sizes come from five steps: small 14px, body 17px, lead clamp(19–24px), heading clamp(34–64px), display clamp(76–190px). Monument sizes (hero name, Experience initials, footer wordmark, statement) are the only sanctioned departures, and each is a scaled display or heading voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width Is Weight Rule",
+        "body": "Hierarchy is carried by `font-stretch` and weight together: 118%/760 for display, 108%/680 for headings, 112%/700 for the wordmark, 100% for text. Do not introduce a second family to get contrast.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floating-Only Rule",
+        "body": "A shadow means \"this layer is above the page\". Cards, plates, buttons and bands never carry one.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do take every colour from the nine tokens; ink text on highlighter, paper text on ink.",
+      "Do show hover, focus and active state with the highlighter swipe (280ms, ease-out, per line), and make it reachable by keyboard focus and `data-active`, not hover alone.",
+      "Do draw any diagram of a process as a figure plate: 1.5px ink strokes, square boxes, the core step in highlighter, a \"Figure.\" caption beneath.",
+      "Do use Archivo's width axis for hierarchy: 118%/760 display, 108%/680 headings, normal width for text.",
+      "Do keep corners square (0px) on every element.",
+      "Do use the motion curves: ease-out cubic-bezier(0.23, 1, 0.32, 1) for entrances and state, ease-in-out cubic-bezier(0.77, 0, 0.175, 1) for curtains and clip reveals, drawer cubic-bezier(0.32, 0.72, 0, 1) for sheets; reveals rise 20px over 0.6s once; presses scale to 0.97.",
+      "Do honour `prefers-reduced-motion`: finished states, no marquee travel, no press scale.",
+      "Do label every control in words; icons only accompany text."
+    ],
+    "donts": [
+      "Don't add a second accent hue, a gradient, or a glow; the highlighter is the only colour.",
+      "Don't put a shadow on anything that is not floating above the page (the project dialog).",
+      "Don't round corners.",
+      "Don't fill large areas with the highlighter outside the Contact field; elsewhere it is a mark or a state.",
+      "Don't introduce a second typeface or a monospace for labels; use Archivo with tabular figures.",
+      "Don't show state on navigation, filters or list rows by recolouring the text or outlining it; those take the swipe. Plain inline links in text and on the colour fields underline on hover instead."
+    ]
+  }
+}

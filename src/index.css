@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+/*
+ * Figure-plate system: cool paper, blue-black ink, one highlighter.
+ * Every colour on the page resolves to one of these tokens.
+ */
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --color-paper: #f1f2ee;
+  --color-surface: #e5e7e1;
+  --color-surface-2: #d9dcd4;
+  --color-ink: #121316;
+  --color-muted: #4f535a;
+  --color-mark: #e9fb3c;
+  --color-mark-2: #dcef2c;
+  --color-ink-soft: #2a2c31;
+  --color-paper-dim: #b9bcb4;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --breakpoint-xs: 475px;
+}
+
+:root {
+  color-scheme: light;
+  --gutter: clamp(16px, 2.2vw, 32px);
+  /* Five type steps: small, body, lead, heading, display */
+  --step-small: 14px;
+  --step-body: 17px;
+  --step-lead: clamp(19px, 1.5vw, 24px);
+  --step-heading: clamp(34px, 4.4vw, 64px);
+  --step-display: clamp(76px, 11vw, 190px);
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--step-body);
+    line-height: 1.55;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  html {
+    overflow-x: clip;
+  }
+
+  /* Paper grain: a fixed, static noise layer over the whole page */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.46 0 0 0 0 0.44 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background: var(--color-mark);
+    color: var(--color-ink);
+  }
+
+  /* Focus is drawn in ink, offset so it never sits on the text */
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+  .on-ink :focus-visible {
+    outline-color: var(--color-mark);
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1.5px;
+  }
+
+  input,
+  textarea,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  input,
+  textarea {
+    caret-color: var(--color-ink);
+  }
+
+  * {
+    scrollbar-color: var(--color-ink) var(--color-surface);
+    scrollbar-width: thin;
+  }
+}
+
+@layer components {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Display voice: expanded, heavy, tight */
+  .display {
+    font-stretch: 118%;
+    font-weight: 760;
+    letter-spacing: -0.04em;
+    line-height: 0.88;
+  }
+  .heading {
+    font-stretch: 108%;
+    font-weight: 680;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    text-wrap: balance;
+  }
+
+  /*
+   * The highlighter: a flat fill swept in left to right on each line of an inline element.
+   * The image is a single-colour layer, not a gradient: it exists so background-size can animate per line.
+   * Active on the element itself, or on its .mark-host ancestor (hover, focus, data-active).
+   */
+
+  .mark-swipe {
+    background-image: linear-gradient(var(--color-mark), var(--color-mark)); /* taste-skill-ignore: one flat colour, needed to animate background-size per line */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 0% 100%;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding-inline: 0.06em;
+    margin-inline: -0.06em;
+    transition: background-size 280ms var(--ease-out);
+  }
+  .mark-swipe[data-active="true"],
+  .mark-host[data-active="true"] .mark-swipe,
+  .mark-host:focus-visible .mark-swipe,
+  .mark-swipe:focus-visible {
+    background-size: 100% 100%;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .mark-swipe:hover,
+    .mark-host:hover .mark-swipe {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+/* Pressable feedback */
+.press {
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 200ms ease,
+    color 200ms ease;
+}
+.press:active {
+  transform: scale(0.97);
+}
+
+/* Hero marquee: the name travels; a paper copy is clipped to the portrait */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+  will-change: transform;
+}
+.marquee-pause:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track {
+    animation: none;
+    /* The track is four equal units; centre the first copy of the name */
+    transform: translateX(calc(50vw - 12.5%));
+  }
+  .mark-swipe,
+  .press {
+    transition-duration: 0ms;
+  }
+  .press:active {
+    transform: none;
+  }
+}
