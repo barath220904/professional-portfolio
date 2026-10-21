@@ -27,7 +27,7 @@ Visitors read on desktop between other applications, and on phones from LinkedIn
 ## Capabilities and Constraints
 
 - Stack is fixed: React 19, TypeScript, Vite, Tailwind CSS v4, Motion, Lucide React, Express. No new dependencies without a concrete reason.
-- The contact form has no backend. It must not claim a message was sent; it hands off to the visitor's mail client.
+- The contact form sends through Web3Forms (key in `VITE_WEB3FORMS_KEY`) to barathvijay2209@gmail.com. It only reports "sent" after Web3Forms confirms success, and says plainly when it is not configured or fails.
 - Five projects link to their public GitHub repositories. The Weather Dashboard has no public repository or demo yet, and no project has a live demo; the UI shows those as pending, never as finished links.
 
 ## Brand Commitments

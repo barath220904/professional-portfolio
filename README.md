@@ -17,7 +17,12 @@ npm start       # serves dist/ on port 3000
 
 ## Environment
 
-`PORT` (optional, default `3000`) sets the server port. No API keys are needed.
+| Variable | Purpose |
+| --- | --- |
+| `VITE_WEB3FORMS_KEY` | Contact form delivery. Get a free key at [web3forms.com](https://web3forms.com) with the inbox that should receive messages. It is read at build time, so rebuild after changing it. |
+| `PORT` | Optional server port, default `3000` |
+
+Without `VITE_WEB3FORMS_KEY` the form validates but tells visitors it is not connected and points them to the email address.
 
 ## Structure
 
@@ -34,6 +39,6 @@ npm start       # serves dist/ on port 3000
 
 - **Project links:** set `repoUrl` / `liveUrl` on a project in `src/data.ts`. An empty string shows an honest "not public yet" / "no live demo yet" state instead of a button. The Weather Dashboard currently has neither.
 - **Project figures:** each project's `figure.steps` is its real pipeline; mark the core step with `model: true` to highlight it.
-- **Contact form:** there is no form backend; submitting opens the visitor's email app with the message filled in.
+- **Contact form:** "Send message" posts to Web3Forms, which emails the message to the inbox tied to the key, with the visitor's address as reply-to. A hidden honeypot filters basic spam bots.
 
 The site is fully static after `npm run build`; `dist/` can also be deployed to any static host.
